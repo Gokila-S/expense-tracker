@@ -1,0 +1,119 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body{
+  background-color: lavender;
+}
+.expense-container{
+  background-color: white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top:50px;
+ }
+ .expense-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  border:1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 7px;
+ }
+ .expense-item.income{
+  border-right: 5px solid green;
+ }
+  .expense-item.expense{
+  border-right: 5px solid red;
+ }
+ .expense-item.expense .expense-amount{
+  color:red;
+ }
+ .expense-item.income .expense-amount{
+  color:green;
+ }
+ .expense-form{
+  padding: 10px;
+  padding-top:0px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top:20px;
+ }
+ .form-group{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  margin-bottom: 10px;
+ }
+.form-group input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background-color:rgb(105, 100, 237);
+    color:white;
+    cursor: pointer;
+    width:100%;
+}
+.balance-container{
+    padding: 20px;
+    background-color:rgb(105, 100, 237);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.currency-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    background-color:rgb(126, 122, 255);
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    padding:20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.currency-item .title{
+    font-size:14px;
+    text-transform: uppercase;
+}
+.currency-item .amount{
+    font-size: 24px;
+    font-weight: bold;
+}
+.currency-item .amount.income{
+  color:rgb(111, 255, 111);
+}
+.currency-item .amount.expense{
+  color:rgb(243, 161, 161);
+}
+.errorMsg{
+  font-weight: bold;
+  color: red;
+  padding:5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.clear-button{
+  margin-top: 10px;
+  background-color: rgb(255, 105, 105);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
