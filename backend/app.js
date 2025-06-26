@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const MONGO_URI = 'mongodb+srv://gokilas:Goki%40123@expenses.foylsuz.mongodb.net/?retryWrites=true&w=majority&appName=expenses';
+const MONGO_URI = 'mongodb+srv://gokilas:gokilas@expenses.foylsuz.mongodb.net/?retryWrites=true&w=majority&appName=expenses';
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log(' MongoDB connected successfully!'))
