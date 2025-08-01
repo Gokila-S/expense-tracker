@@ -1,4 +1,4 @@
-# 💸 Expense Tracker – A Fullstack MERN Application
+# 💸 Expense Tracker
 
 A fullstack Expense Tracker application built with **React (Vite)** on the frontend, **Node.js + Express.js** on the backend, and **MongoDB** as the database.
 
