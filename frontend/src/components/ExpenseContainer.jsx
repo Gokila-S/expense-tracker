@@ -14,7 +14,7 @@ const ExpenseContainer = () => {
 
     const fetchExpenses = async () => {
             try {
-                const res = await fetch('http://localhost:3000/expense');
+                const res = await fetch('https://expense-tracker-j0h4.onrender.com/expense');
                 const data = await res.json();
                 setExpenses(data);
             } catch (err) {
@@ -24,7 +24,7 @@ const ExpenseContainer = () => {
 
     const addExpense = async (title, amount) => {
         try {
-            const res = await fetch('http://localhost:3000/expense', { 
+            const res = await fetch('https://expense-tracker-j0h4.onrender.com/expense', { 
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
                 body: JSON.stringify({title,amount}),
@@ -42,7 +42,7 @@ const ExpenseContainer = () => {
 
     const deleteExpense = async (id) => {
         try {
-            const res = await fetch(`http://localhost:3000/expense/${id}`, { 
+            const res = await fetch(`https://expense-tracker-j0h4.onrender.com/expense/${id}`, { 
                 method:'DELETE'
             });
         if(res.ok){
@@ -57,7 +57,7 @@ const ExpenseContainer = () => {
 
     const editExpense = async (id, title, amount) => {
         try {
-            const res = await fetch(`http://localhost:3000/expense/${id}`, {
+            const res = await fetch(`https://expense-tracker-j0h4.onrender.com/expense/${id}`, {
                 method:'PUT',
                 headers:{'Content-Type':'application/json'},
                 body: JSON.stringify({title,amount}),
